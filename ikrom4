@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Погода в Душанбе</title>
+  <script src="{{ url_for('static', filename='js/autchscript.js') }}"></script>
+</head>
+
+<body>
+    <h2 align="center">Добро пожаловать!</h2>
+  <script>setInterval(time, 1000);</script>
+       
+<div align="center" id="time" style="font-weight: bold;"> 
+<span id="id_H" class="time" style="color: red;"></span> : <span id="id_M" class="time" style="color: yellow;"></span> : <span id="id_S" class="time" style="color:blue;" ></span>    
+</div>  
+    <header>
+  <link type='text/css' href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+  <!-- Меню -->
+  </div>
+  </header>
+  <div>
+    <iframe style="background-color: rgb(2, 255, 175);" src="https://sssr.newsnovosti.ru/widget-novosti-sssr/"
+      name="novosti-sssr" width="100%" height="500px" frameborder="0" marginwidth="2" marginheight="4"></iframe>
+    <iframe class="name1" style="width:200px;border:0;overflow:hidden;background-color:transparent;height:344px"
+      scrolling="no"
+      src="https://fortrader.org/informers/getInformer?st=5&cat=7&title=%D0%9A%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%20TJ&texts=%7B%22toolTitle%22%3A%22%D0%92%D0%B0%D0%BB%D1%8E%D1%82%D0%B0%22%2C%22todayCourse%22%3A%22%22%7D&mult=1.5&showGetBtn=0&hideHeader=0&hideDate=0&w=0&codes=1&colors=false&items=2%2C21&columns=todayCourse&toCur=6"></iframe>
+    <iframe class="name2" style="width:200px;border:0;overflow:hidden;background-color:transparent;height:344px"
+      scrolling="no"
+      src="https://fortrader.org/informers/getInformer?st=5&cat=7&title=%D0%9A%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%20RUB&texts=%7B%22toolTitle%22%3A%22%D0%92%D0%B0%D0%BB%D1%8E%D1%82%D0%B0%22%2C%22todayCourse%22%3A%22%22%7D&mult=1.5&showGetBtn=0&hideHeader=0&hideDate=0&w=0&codes=1&colors=false&items=2%2C21&columns=todayCourse&toCur=11111"></iframe>
+    <iframe class="name3" style="width:200px;border:0;overflow:hidden;background-color:transparent;height:344px"
+      scrolling="no"
+      src="https://fortrader.org/informers/getInformer?st=5&cat=7&title=%D0%9A%D1%83%D1%80%D1%81%D1%8B%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82%20USD&texts=%7B%22toolTitle%22%3A%22%D0%92%D0%B0%D0%BB%D1%8E%D1%82%D0%B0%22%2C%22todayCourse%22%3A%22%22%7D&mult=1.5&showGetBtn=0&hideHeader=0&hideDate=0&w=0&codes=1&colors=false&items=21%2C6&columns=todayCourse&toCur=2"></iframe>
+    <a id="ms-informer-link-ec157aba38a593e4acb898cf186c7619" class="ms-informer-link"
+      href="https://www.meteoservice.ru/weather/overview/dushanbe">Погода в Душанбе</a>
+    <script class="ms-informer-script"
+      src="https://www.meteoservice.ru/informer/script/ec157aba38a593e4acb898cf186c7619"></script>
+    <!-- End -->
+  </div>
+  <form action="action_page.php">
+    <div class="container">
+      <h1>Register</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form>
+</body>
+
+</html>
