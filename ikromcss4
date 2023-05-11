@@ -1,0 +1,109 @@
+#Home {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+#Home li { display: inline; }
+
+#Home {
+margin: 0;
+padding: 0;
+list-style-type: none;
+border: 2px solid #0066FF;
+border-radius: 10px 5px;
+width: 500px;
+text-align: center;
+background-color: #33ADFF;
+}
+#Home{
+width: 75%;
+height: 50px;
+}
+#Home li { display: inline; }
+#Home a {
+color: #fff;
+padding: 15px 20px;
+text-decoration: black;
+font-weight: bold;
+display: inline-block;
+width: 200px;
+}
+#Home a:hover {
+border-radius: 20px 5px;
+background-color: #0066FF;
+}
+.name1{
+margin: 100px;
+border-radius: 20px;
+padding: 5px;
+}
+.name2{
+    margin: 100px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.name3{
+    margin: 100px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.display{
+    padding: 20px;
+}
+body{
+    background-color: darkgrey;
+}
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
